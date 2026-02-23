@@ -300,7 +300,7 @@ export default function Hero() {
               fontStyle: "italic",
             }}
           >
-            &ldquo;Connecting African infrastructure to global capital.&rdquo;
+            &ldquo;Africa holds the assets that will define the 21st century. I build the systems to unlock them.&rdquo;
           </p>
 
           {/* CTAs */}

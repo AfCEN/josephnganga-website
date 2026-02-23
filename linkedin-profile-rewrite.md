@@ -1,63 +1,66 @@
 # LinkedIn Profile Rewrite — Copy-Paste Ready
+*Updated: Feb 24, 2026 — Full positioning with AI, minerals, defense*
 
 ## Headline (220 chars max)
 ```
-Infrastructure Finance Architect · AI Systems Builder · CEO & Founder, AfCEN | Connecting African infrastructure to global capital | Former Mission 300 Envoy · Rockefeller Foundation · GEAPP
+Infrastructure Finance Architect · AI Systems Pioneer · CEO & Founder, AfCEN | Africa holds the assets that define the 21st century. I build the systems to unlock them.
 ```
 
 ## About / Summary
 ```
-I build systems that move capital into African energy infrastructure — faster, smarter, and at continental scale.
+Africa will determine who wins the four defining competitions of the 21st century: the clean energy transition, the critical minerals race, the AI arms race, and the future of global defense.
 
-At AfCEN (Africa Climate & Energy Nexus), I've built a 16-agent AI architecture that runs live investment intelligence across 54 African markets. Not a demo. Not a pilot. A production system handling deal sourcing, regulatory monitoring, satellite-verified project tracking, and institutional partnership management.
+I build the intelligence infrastructure at the centre of all four.
+
+At AfCEN (Africa Climate & Energy Nexus), I've deployed a 16-agent AI architecture running live intelligence operations across 54 African markets — spanning energy infrastructure, critical and strategic minerals, agricultural supply chains, natural capital, and digital systems. Not a demo. A production system making real decisions on real deals.
 
 Before AfCEN:
-→ Mission 300 Special Envoy for the World Bank and African Development Bank — engaging heads of state to secure Energy Compacts for electrifying 300M people by 2030
-→ CEO of the inaugural Africa Climate Summit, appointed by H.E. President Ruto
-→ VP for Africa at the Global Energy Alliance for People and Planet (GEAPP)
-→ Executive Director, Power & Climate Africa at The Rockefeller Foundation
-→ Co-founded responsAbility Renewable Energy Holding — grew it to $121M
-→ Head, Regional Office for Africa at responsAbility AG ($3B Swiss asset manager)
-→ Founded Renewable Energy Ventures; led the $15M Kenya Climate Innovation Centre business plan and fundraising
-→ Started as an Investment Banker at Bank of America
+→ Mission 300 Special Envoy — World Bank & African Development Bank. Engaged heads of state across Africa to secure Energy Compacts for electrifying 300 million people by 2030.
+→ CEO, inaugural Africa Climate Summit — appointed by H.E. President Ruto of Kenya
+→ VP for Africa, Global Energy Alliance for People and Planet (GEAPP)
+→ Executive Director, Power & Climate Africa — The Rockefeller Foundation
+→ Co-founded responsAbility Renewable Energy Holding — grew to $121M
+→ Investment Banker, Bank of America
+→ Harvard Business School Executive Education
 
-Current board and advisory roles:
-• Chair, Funders Council at Sustainable Energy for All (SE4ALL)
-• Governing Council Member, Sustainable Energy Fund for Africa (SEFA)
-• Board Member, Carolina for Kibera
+Current governance roles:
+• Chair, Funders Council — Sustainable Energy for All (SE4ALL)
+• Governing Council Member — Sustainable Energy Fund for Africa (SEFA)
+• Board Member — Carolina for Kibera
 
 I speak and advise on:
-1. AI for Development Finance — real tools, real deals, not theory
-2. Climate Finance Deal Structuring — "Blank to Bankable"
-3. African Energy Transition Strategy — NDCs to interconnectors
-4. AI-Powered Organisation Design — how to build agent teams that run companies
-5. EU-Africa Institutional Navigation — Global Gateway, PADOR, bilateral funding
+1. AI for Development Finance — operational systems, not theory
+2. African Infrastructure Deal Structuring — "Blank to Bankable"
+3. Critical Minerals: Energy, Defense & Sovereignty
+4. Africa and the AI Dominance Race
+5. African Energy Transition Strategy
+6. AI-Powered Organisation Design
+7. EU-Africa Institutional Navigation
 
-Current live engagements include Enabel Mozambique, ECOWAS Summit digital transformation, and East African energy infrastructure.
+Active engagements span Enabel Mozambique, ECOWAS Summit digital transformation, East African energy infrastructure, and strategic minerals intelligence.
 
-I advise selectively. If you're working on African energy/climate finance and need a genuine practitioner — let's talk.
+I advise selectively. If your work touches African assets, global capital, or the geopolitics of the 21st century — let's talk.
 
-📩 The Nexus Brief (weekly newsletter): [link]
+📩 The Nexus Brief (weekly): [link]
 🌐 josephnganga.com
 ```
 
-## Featured Section (pin these in order)
-1. 📩 Newsletter: "The Nexus Brief — Weekly intelligence for Africa climate finance" → [Beehiiv link]
-2. 🌐 Website: josephnganga.com → [website link]
-3. 📄 Lead magnet: "The Bankability Checklist: 12 Points DFI Investment Officers Actually Screen For" → [gated download link]
+## Featured Section (pin in order)
+1. 📩 Newsletter: "The Nexus Brief" → [Beehiiv link]
+2. 🌐 Website: josephnganga.com
+3. 📄 Lead magnet: "The Critical Minerals Intelligence Brief: What Africa's Asset Map Means for Global Investors" → [gated download]
 
-## Creator Mode
-Turn ON. Select topics:
+## Creator Mode Topics
+- Artificial Intelligence
 - Climate Change
 - Renewable Energy
-- Artificial Intelligence
 - Africa
-- Investment
+- National Security
 
 ## Action Items
 - [ ] Copy-paste headline
 - [ ] Copy-paste About section
 - [ ] Turn on Creator Mode
-- [ ] Set up Featured section
-- [ ] Update Experience with AfCEN achievements (16 agents, 54 markets, $200K+ live deals)
-- [ ] Update profile photo to professional headshot (book photographer this week)
+- [ ] Update Featured section (switch lead magnet to critical minerals — higher value)
+- [ ] Update profile photo
+- [ ] Pin: "Africa holds the assets that will define the 21st century" as first post

@@ -85,6 +85,37 @@ const topics = [
       </svg>
     ),
   },
+  {
+    number: "06",
+    title: "Critical Minerals: Energy, Defense & Sovereignty",
+    subtitle: "Africa&apos;s Strategic Moment",
+    description:
+      "Africa holds 30%+ of the world&apos;s critical mineral reserves — cobalt, lithium, rare earths, platinum group metals essential not just for clean energy, but for every advanced weapons system, semiconductor, and AI chip on earth. This talk makes the national security case that Western governments cannot afford to miss: the African minerals race is already underway, China has a 20-year head start, and intelligence infrastructure is the decisive advantage.",
+    audience: "Defense · National Security · Sovereign Investors · Policy",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <polygon points="14,3 25,20 3,20" stroke="#d4a853" strokeWidth="1.5" strokeLinejoin="round" fill="none" />
+        <circle cx="14" cy="15" r="3" stroke="#d4a853" strokeWidth="1.5" />
+        <path d="M14 12v-5" stroke="#d4a853" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M8 20l-3 4M20 20l3 4" stroke="rgba(212,168,83,0.5)" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    number: "07",
+    title: "Africa and the AI Dominance Race",
+    subtitle: "The Continent That Decides Who Wins",
+    description:
+      "AI dominance requires chips. Chips require rare earths, cobalt, and tantalum. Africa has them. Africa is also the largest remaining untapped data market — 1.4 billion people rapidly digitising — and whoever builds the AI infrastructure there gains both the supply chain and the training data advantage simultaneously. This talk maps Africa&apos;s pivotal role in the US-China AI competition, and what it means for investors, governments, and technology companies operating on the continent.",
+    audience: "Tech Giants · AI Policy · Governments · Venture Capital",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <rect x="8" y="8" width="12" height="12" rx="2" stroke="#d4a853" strokeWidth="1.5" />
+        <circle cx="14" cy="14" r="3" stroke="#d4a853" strokeWidth="1.5" />
+        <path d="M8 11H4M8 14H4M8 17H4M20 11h4M20 14h4M20 17h4M11 8V4M14 8V4M17 8V4M11 20v4M14 20v4M17 20v4" stroke="rgba(212,168,83,0.5)" strokeWidth="1.2" strokeLinecap="round" />
+      </svg>
+    ),
+  },
 ];
 
 export default function Speaking() {

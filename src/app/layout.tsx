@@ -4,15 +4,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Joseph Ng'ang'a — Infrastructure Finance Architect & AI Systems Builder",
   description:
-    "Joseph Ng'ang'a connects African infrastructure to global capital. Founder & CEO of AfCEN, Mission 300 Special Envoy, former Rockefeller Foundation. Based between Nairobi and Washington, DC.",
+    "Joseph Ng'ang'a builds the intelligence systems at the intersection of Africa's clean energy transition, critical minerals race, AI dominance, and defense. Founder & CEO of AfCEN, Mission 300 Special Envoy, former Rockefeller Foundation.",
   keywords: [
     "Joseph Nganga",
     "AfCEN",
     "Infrastructure Finance",
-    "Africa Energy",
+    "Critical Minerals Africa",
     "AI Development Finance",
     "Mission 300",
     "African Development Bank",
+    "Africa AI",
+    "Defense Critical Minerals",
+    "Agentic AI",
   ],
   authors: [{ name: "Joseph Ng'ang'a" }],
   openGraph: {
