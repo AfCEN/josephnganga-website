@@ -280,7 +280,7 @@ export default function Hero() {
               lineHeight: 1.5,
             }}
           >
-            Climate Finance Architect · AI Systems Builder
+            Infrastructure Finance Architect · AI Systems Builder
             <br />
             <span style={{ color: "#64748b" }}>
               Nairobi · Washington, DC

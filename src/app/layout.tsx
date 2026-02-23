@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Joseph Ng'ang'a — Climate Finance & AI Systems",
+  title: "Joseph Ng'ang'a — Infrastructure Finance Architect & AI Systems Builder",
   description:
-    "Joseph Ng'ang'a is the Founder & CEO of AfCEN, a Mission 300 Special Envoy, and a leading voice on climate finance, African energy transition, and AI-powered development. Based between Nairobi and Washington, DC.",
+    "Joseph Ng'ang'a connects African infrastructure to global capital. Founder & CEO of AfCEN, Mission 300 Special Envoy, former Rockefeller Foundation. Based between Nairobi and Washington, DC.",
   keywords: [
     "Joseph Nganga",
     "AfCEN",
-    "Climate Finance",
+    "Infrastructure Finance",
     "Africa Energy",
     "AI Development Finance",
     "Mission 300",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Joseph Ng'ang'a" }],
   openGraph: {
-    title: "Joseph Ng'ang'a — Climate Finance Architect & AI Systems Builder",
+    title: "Joseph Ng'ang'a — Infrastructure Finance Architect & AI Systems Builder",
     description:
       "Connecting African infrastructure to global capital. Founder & CEO of AfCEN, Mission 300 Special Envoy, former Rockefeller Foundation.",
     type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     creator: "@ngangaj",
-    title: "Joseph Ng'ang'a — Climate Finance & AI",
+    title: "Joseph Ng'ang'a — Infrastructure Finance & AI",
     description: "Connecting African infrastructure to global capital.",
   },
   robots: {

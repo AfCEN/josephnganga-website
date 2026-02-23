@@ -2,7 +2,7 @@
 
 ## About Joseph
 - **Name:** Joseph Ng'ang'a
-- **Title:** Climate Finance Architect · AI Systems Builder · CEO & Founder, AfCEN
+- **Title:** Infrastructure Finance Architect · AI Systems Builder · CEO & Founder, AfCEN
 - **Tagline:** "Connecting African infrastructure to global capital"
 - **Location:** Based between Nairobi and Washington, DC
 - **Email:** joseph.nganga@africacen.org (use a contact form, don't expose directly)

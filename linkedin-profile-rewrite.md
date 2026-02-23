@@ -2,7 +2,7 @@
 
 ## Headline (220 chars max)
 ```
-Climate Finance Architect · AI Systems Builder · CEO & Founder, AfCEN | Advising DFIs, funds & governments on Africa's energy transition | Former Mission 300 Envoy · Rockefeller Foundation · GEAPP
+Infrastructure Finance Architect · AI Systems Builder · CEO & Founder, AfCEN | Connecting African infrastructure to global capital | Former Mission 300 Envoy · Rockefeller Foundation · GEAPP
 ```
 
 ## About / Summary
