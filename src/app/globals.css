@@ -1,26 +1,268 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy: #0a0f1a;
+  --color-navy-light: #0e1525;
+  --color-navy-card: #111827;
+  --color-navy-border: #1e2d45;
+  --color-gold: #d4a853;
+  --color-gold-light: #e8c06a;
+  --color-gold-dim: #b8923f;
+  --color-slate-muted: #64748b;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #0a0f1a;
+  --foreground: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════
+   SCROLL ANIMATION UTILITIES
+═══════════════════════════════════════ */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+
+/* ═══════════════════════════════════════
+   HERO ANIMATIONS
+═══════════════════════════════════════ */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-18px) rotate(2deg); }
+  66%       { transform: translateY(-8px) rotate(-1deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50%       { opacity: 0.28; transform: scale(1.08); }
+}
+
+@keyframes shimmer-line {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
+
+/* ═══════════════════════════════════════
+   GOLD ACCENT LINE
+═══════════════════════════════════════ */
+
+.gold-line {
+  width: 48px;
+  height: 2px;
+  background: #d4a853;
+}
+
+/* ═══════════════════════════════════════
+   CUSTOM SCROLLBAR
+═══════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0f1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2d45;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4a853;
+}
+
+/* ═══════════════════════════════════════
+   SELECTION
+═══════════════════════════════════════ */
+
+::selection {
+  background: rgba(212, 168, 83, 0.25);
+  color: #f8fafc;
+}
+
+/* ═══════════════════════════════════════
+   FOCUS RING
+═══════════════════════════════════════ */
+
+:focus-visible {
+  outline: 2px solid #d4a853;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ═══════════════════════════════════════
+   SECTION PATTERNS
+═══════════════════════════════════════ */
+
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(212,168,83,0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ═══════════════════════════════════════
+   FORM INPUTS
+═══════════════════════════════════════ */
+
+.form-input {
+  width: 100%;
+  background: rgba(14, 21, 37, 0.8);
+  border: 1px solid #1e2d45;
+  border-radius: 6px;
+  padding: 12px 16px;
+  color: #f8fafc;
+  font-size: 0.9375rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.form-input::placeholder {
+  color: #475569;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #d4a853;
+  box-shadow: 0 0 0 3px rgba(212, 168, 83, 0.1);
+}
+
+/* ═══════════════════════════════════════
+   CARD HOVER
+═══════════════════════════════════════ */
+
+.card-hover {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 168, 83, 0.35) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(212, 168, 83, 0.06);
+}
+
+/* ═══════════════════════════════════════
+   BUTTON
+═══════════════════════════════════════ */
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #d4a853;
+  color: #0a0f1a;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  letter-spacing: 0.01em;
+  font-family: inherit;
+}
+
+.btn-gold:hover {
+  background: #e8c06a;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(212, 168, 83, 0.3);
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #d4a853;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 13px 27px;
+  border-radius: 6px;
+  border: 1px solid #d4a853;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  letter-spacing: 0.01em;
+  font-family: inherit;
+}
+
+.btn-outline:hover {
+  background: rgba(212, 168, 83, 0.08);
+  transform: translateY(-1px);
 }
