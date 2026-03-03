@@ -265,7 +265,7 @@ export default function Hero() {
               backgroundClip: "text",
             }}
           >
-            Ng&apos;ang&apos;a
+            Nganga
           </h1>
 
           {/* Title */}
