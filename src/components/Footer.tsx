@@ -33,7 +33,7 @@ export default function Footer() {
               marginBottom: "4px",
             }}
           >
-            Joseph Ng&apos;ang&apos;a
+            Joseph Nganga
           </div>
           <div
             style={{
@@ -101,7 +101,7 @@ export default function Footer() {
             textAlign: "right",
           }}
         >
-          <div>© {year} Joseph Ng&apos;ang&apos;a</div>
+          <div>© {year} Joseph Nganga</div>
           <div style={{ marginTop: "2px" }}>
             <a
               href="https://africacen.org"

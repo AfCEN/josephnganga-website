@@ -180,7 +180,7 @@ export default function About() {
                 marginBottom: "24px",
               }}
             >
-              Joseph Ng&apos;ang&apos;a is the Founder and CEO of{" "}
+              Joseph Nganga is the Founder and CEO of{" "}
               <span style={{ color: "#d4a853", fontWeight: 600 }}>
                 AfCEN (Africa Climate &amp; Energy Nexus)
               </span>

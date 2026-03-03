@@ -78,7 +78,7 @@ export default function Nav() {
               lineHeight: 1.2,
             }}
           >
-            Joseph Ng&apos;ang&apos;a
+            Joseph Nganga
           </span>
           <span
             style={{
