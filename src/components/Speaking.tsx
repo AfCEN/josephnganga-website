@@ -359,24 +359,44 @@ export default function Speaking() {
               forums worldwide.
             </p>
           </div>
-          <a
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              const el = document.querySelector("#contact");
-              if (el) {
-                const y = el.getBoundingClientRect().top + window.scrollY - 72;
-                window.scrollTo({ top: y, behavior: "smooth" });
-              }
-            }}
-            className="btn-gold"
-            style={{ textDecoration: "none" }}
-          >
-            Speaking Inquiry
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </a>
+          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.querySelector("#contact");
+                if (el) {
+                  const y = el.getBoundingClientRect().top + window.scrollY - 72;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
+              }}
+              className="btn-gold"
+              style={{ textDecoration: "none" }}
+            >
+              Speaking Inquiry
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+            <button
+              onClick={() => {
+                // @ts-expect-error Calendly is loaded via external script
+                if (window.Calendly) {
+                  // @ts-expect-error Calendly is loaded via external script
+                  window.Calendly.initPopupWidget({
+                    url: "https://calendly.com/YOUR_CALENDLY_URL/30min",
+                  });
+                }
+              }}
+              className="btn-outline"
+            >
+              Book a Call
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1.5" stroke="currentColor" strokeWidth="1.25" />
+                <path d="M2 6h12M5 1.5v3M11 1.5v3" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>

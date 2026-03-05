@@ -16,7 +16,7 @@ const inquiryTypes = [
 ];
 
 // Replace with your actual Formspree form ID
-const FORMSPREE_ID = "YOUR_FORMSPREE_ID";
+const FORMSPREE_ID = "mdalqlby";
 
 export default function Contact() {
   const sectionRef = useScrollAnimation() as React.RefObject<HTMLElement>;

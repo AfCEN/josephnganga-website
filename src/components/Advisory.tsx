@@ -334,22 +334,41 @@ export default function Advisory() {
           ))}
         </div>
 
-        {/* Bottom note */}
-        <p
-          className="fade-up"
-          style={{
-            textAlign: "center",
-            marginTop: "48px",
-            color: "#475569",
-            fontSize: "0.875rem",
-            lineHeight: 1.6,
-          }}
-        >
-          All engagements are subject to capacity and fit. Joseph works with a small
-          number of organisations at any time to ensure quality.
-          <br />
-          Reach out to start a conversation.
-        </p>
+        {/* Bottom note + Calendly CTA */}
+        <div className="fade-up" style={{ textAlign: "center", marginTop: "48px" }}>
+          <p
+            style={{
+              color: "#475569",
+              fontSize: "0.875rem",
+              lineHeight: 1.6,
+              marginBottom: "24px",
+            }}
+          >
+            All engagements are subject to capacity and fit. Joseph works with a small
+            number of organisations at any time to ensure quality.
+            <br />
+            Reach out to start a conversation.
+          </p>
+          <button
+            onClick={() => {
+              // @ts-expect-error Calendly is loaded via external script
+              if (window.Calendly) {
+                // @ts-expect-error Calendly is loaded via external script
+                window.Calendly.initPopupWidget({
+                  url: "https://calendly.com/YOUR_CALENDLY_URL/30min",
+                });
+              }
+            }}
+            className="btn-gold"
+            style={{ margin: "0 auto" }}
+          >
+            Book a 30-Minute Strategy Call
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="3" width="12" height="10" rx="1.5" stroke="currentColor" strokeWidth="1.25" />
+              <path d="M2 6h12M5 1.5v3M11 1.5v3" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
   );

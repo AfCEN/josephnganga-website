@@ -90,13 +90,12 @@ export default function Insights() {
   const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState<"newsletter" | "intelligence">("newsletter");
 
-  const handleSubscribe = async (e: React.FormEvent) => {
+  const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 800));
-    setSubscribed(true);
-    setLoading(false);
+    // Redirect to Beehiiv subscribe page with email pre-filled
+    window.location.href = `https://newsletter.josephnganga.com/subscribe?email=${encodeURIComponent(email)}`;
   };
 
   return (
