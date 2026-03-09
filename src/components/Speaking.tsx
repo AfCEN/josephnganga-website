@@ -384,7 +384,7 @@ export default function Speaking() {
                 if (window.Calendly) {
                   // @ts-expect-error Calendly is loaded via external script
                   window.Calendly.initPopupWidget({
-                    url: "https://calendly.com/YOUR_CALENDLY_URL/30min",
+                    url: "https://calendly.com/joseph-nganga-africacen/30min",
                   });
                 }
               }}

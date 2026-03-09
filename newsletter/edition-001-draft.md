@@ -114,7 +114,7 @@ Upcoming topics:
 - **What European institutions get wrong about African energy investment (and what AI reveals)**
 - **Building a legal AI division: Why compliance is the killer use case**
 
-If this resonated, share it with someone who's thinking about AI beyond chatbots. And if you're a DFI, fund manager, or institution that wants to see what AI-native investment intelligence looks like — [let's talk](mailto:joseph.nganga@africacen.org).
+If this resonated, share it with someone who's thinking about AI beyond chatbots. And if you're a DFI, fund manager, or institution that wants to see what AI-native investment intelligence looks like — [let's talk](https://calendly.com/joseph-nganga-africacen/30min).
 
 ---
 
