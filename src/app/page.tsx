@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import TrustedBy from "@/components/TrustedBy";
 import About from "@/components/About";
 import Speaking from "@/components/Speaking";
 import Advisory from "@/components/Advisory";
@@ -13,6 +14,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <TrustedBy />
         <About />
         <Speaking />
         <Advisory />

@@ -204,7 +204,12 @@ export default function Hero() {
           width: "100%",
           padding: "120px 24px 80px",
           margin: "0 auto",
+          display: "grid",
+          gridTemplateColumns: "1fr",
+          alignItems: "center",
+          gap: "48px",
         }}
+        className="hero-grid"
       >
         <div style={{ maxWidth: "680px" }}>
           {/* Eyebrow */}
@@ -369,6 +374,40 @@ export default function Hero() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Headshot */}
+        <div
+          className="hero-animate hero-photo"
+          style={{
+            display: "none",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div
+            style={{
+              position: "relative",
+              width: "340px",
+              height: "340px",
+              borderRadius: "50%",
+              overflow: "hidden",
+              border: "3px solid rgba(212,168,83,0.3)",
+              boxShadow:
+                "0 0 60px rgba(212,168,83,0.1), 0 20px 60px rgba(0,0,0,0.4)",
+            }}
+          >
+            <img
+              src="/headshots/joseph-nganga-hero.jpg"
+              alt="Joseph Ng'ang'a"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center top",
+              }}
+            />
           </div>
         </div>
       </div>

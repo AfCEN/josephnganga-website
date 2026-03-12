@@ -266,3 +266,33 @@ body {
   background: rgba(212, 168, 83, 0.08);
   transform: translateY(-1px);
 }
+
+/* ═══════════════════════════════════════
+   HERO RESPONSIVE GRID
+═══════════════════════════════════════ */
+
+@media (min-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr auto !important;
+  }
+  .hero-photo {
+    display: flex !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   TRUSTED BY LOGO BAR
+═══════════════════════════════════════ */
+
+.logo-bar-img {
+  height: 32px;
+  width: auto;
+  opacity: 0.5;
+  filter: brightness(0) invert(1);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.logo-bar-img:hover {
+  opacity: 0.9;
+  filter: brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(10deg);
+}

@@ -120,6 +120,6 @@ If this resonated, share it with someone who's thinking about AI beyond chatbots
 
 *Joseph Ng'ang'a is the CEO & Founder of AfCEN, former Mission 300 Special Envoy for the World Bank and African Development Bank, former CEO of the Africa Climate Summit, and former VP for Africa at the Global Energy Alliance for People and Planet. He started his career as an Investment Banker at Bank of America and holds an Executive Education credential from Harvard Business School.*
 
-*Subscribe to The Nexus: [link]*
-*Website: [josephnganga.com]*
+*Subscribe to The Nexus: [newsletter.josephnganga.com](https://newsletter.josephnganga.com)*
+*Website: [josephnganga.com](https://josephnganga.com)*
 *X/Twitter: [@ngangaj](https://x.com/ngangaj)*
