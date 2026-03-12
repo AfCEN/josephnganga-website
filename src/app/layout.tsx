@@ -59,6 +59,46 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Joseph Ng'ang'a",
+              alternateName: "Joseph Nganga",
+              jobTitle: "CEO & Founder",
+              worksFor: {
+                "@type": "Organization",
+                name: "AfCEN",
+                description: "Africa Climate and Energy Nexus",
+              },
+              url: "https://josephnganga.com",
+              sameAs: ["https://x.com/ngangaj"],
+              image: "https://josephnganga.com/headshots/joseph-nganga-hero.jpg",
+              knowsAbout: [
+                "Africa energy policy",
+                "critical minerals",
+                "climate finance",
+                "African development",
+                "infrastructure investment",
+                "AI systems",
+              ],
+              alumniOf: [
+                {
+                  "@type": "CollegeOrUniversity",
+                  name: "Queens University of Charlotte",
+                },
+                {
+                  "@type": "CollegeOrUniversity",
+                  name: "Harvard Business School",
+                },
+              ],
+              description:
+                "Joseph Nganga is the Founder & CEO of the Africa Climate and Energy Nexus (AfCEN), former Mission 300 Special Envoy, former VP for Africa at GEAPP, and CEO of Kenya's inaugural Africa Climate Summit. A pioneer in Africa's energy transition, he has mobilised billions in climate and energy investment across the continent.",
+            }),
+          }}
+        />
         {children}
         <Analytics />
         <script src="https://assets.calendly.com/assets/external/widget.js" async />
