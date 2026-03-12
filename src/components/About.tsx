@@ -26,13 +26,13 @@ const timeline = [
     year: "2021–2023",
     role: "Vice President for Africa",
     org: "Global Energy Alliance for People & Planet (GEAPP)",
-    desc: "Oversaw Africa strategy for a major philanthropic initiative targeting clean energy access for underserved communities.",
+    desc: "Deployed over $270 million into the African energy sector, catalysing more than $500 million in additional funding across 60+ projects — from solar-powered irrigation in Ethiopia to battery energy storage in Malawi.",
   },
   {
     year: "2019–2021",
     role: "Executive Director, Power & Climate Africa",
     org: "The Rockefeller Foundation",
-    desc: "Led the Foundation's climate and energy programme across Africa, deploying capital and expertise across the continent's energy transition.",
+    desc: "Led the Foundation's energy access and climate strategy across sub-Saharan Africa, deploying capital and expertise across the continent's energy transition.",
   },
   {
     year: "2014–2019",
@@ -44,13 +44,13 @@ const timeline = [
     year: "2012–2014",
     role: "Head, Regional Office for Africa",
     org: "responsAbility AG",
-    desc: "Led Africa operations for the $3B Swiss asset manager investing in Energy, Agriculture, and Financial Institutions.",
+    desc: "Led Africa operations for the $3 billion Swiss asset manager investing in energy, agriculture, and financial institutions.",
   },
   {
     year: "2008–2012",
     role: "Founder",
     org: "Renewable Energy Ventures (REV)",
-    desc: "Project development and advisory in Nairobi. Led development of the Kenya Climate Innovation Centre (KCIC) — a $15M facility supporting clean energy entrepreneurs.",
+    desc: "Project development and advisory firm in Nairobi. Developed renewable energy projects, distributed clean energy products, and supported the design and fundraising for the Kenya Climate Innovation Centre (KCIC) — a $15 million facility backing local entrepreneurs in the climate and clean energy space.",
   },
   {
     year: "Early career",
@@ -180,14 +180,10 @@ export default function About() {
                 marginBottom: "24px",
               }}
             >
-              Joseph Nganga is the Founder and CEO of{" "}
-              <span style={{ color: "#d4a853", fontWeight: 600 }}>
-                AfCEN (Africa Climate &amp; Energy Nexus)
-              </span>
-              , where he&apos;s building AI-powered infrastructure that connects African energy
-              projects to global capital. AfCEN&apos;s platform — spanning investment
-              intelligence, regulatory monitoring, and satellite-verified project tracking —
-              operates across 54 African markets.
+              Joseph Nganga is a leading voice in Africa&apos;s energy transition and climate
+              finance landscape, with over two decades of experience spanning investment
+              banking, entrepreneurship, institutional leadership, and high-level policy
+              advocacy.
             </p>
             <p
               style={{
@@ -197,15 +193,21 @@ export default function About() {
                 marginBottom: "24px",
               }}
             >
-              Before AfCEN, Joseph built deep expertise at the intersection of energy project
-              development, institutional finance, and digital systems across Africa and Europe.
-              He currently serves as{" "}
+              Most recently, Joseph served as the{" "}
               <span style={{ color: "#d4a853", fontWeight: 500 }}>
                 Mission 300 Special Envoy
-              </span>{" "}
-              for the AfDB and World Bank Group — engaging heads of state and ministers to
-              secure Africa Energy Compacts with the goal of electrifying 300 million people by
-              2030.
+              </span>
+              {" "}— the flagship World Bank and African Development Bank initiative to
+              connect 300 million people across Africa to electricity by 2030 — and as{" "}
+              <span style={{ color: "#d4a853", fontWeight: 500 }}>
+                Vice President for Africa at GEAPP
+              </span>
+              . In this dual role, he drove continental-scale mobilisation of capital and
+              political will, helping secure over{" "}
+              <span style={{ color: "#d4a853", fontWeight: 600 }}>$50 billion</span> in
+              partner pledges at the Mission 300 Africa Energy Summit. During his tenure,
+              GEAPP deployed over $270 million into the African energy sector, catalysing
+              more than $500 million in additional funding across more than 60 projects.
             </p>
             <p
               style={{
@@ -215,13 +217,17 @@ export default function About() {
                 marginBottom: "24px",
               }}
             >
-              In 2023, Joseph was appointed by{" "}
+              Joseph was appointed by{" "}
               <span style={{ color: "#d4a853", fontWeight: 500 }}>
                 H.E. President William Ruto
               </span>{" "}
-              of Kenya as CEO of the inaugural Africa Climate Summit — convening African heads
-              of state, the world&apos;s leading development finance institutions, and the private
-              sector on African soil.
+              of Kenya as CEO of the inaugural{" "}
+              <span style={{ color: "#d4a853", fontWeight: 500 }}>
+                Africa Climate Summit (ACS 2023)
+              </span>
+              . The Summit, held in Nairobi, placed Africa at the centre of the global
+              climate conversation and produced landmark commitments on green growth, carbon
+              markets, and climate finance.
             </p>
             <p
               style={{
@@ -230,11 +236,13 @@ export default function About() {
                 lineHeight: 1.75,
               }}
             >
-              Joseph advises governments, DFIs, and multilaterals on climate investment
-              strategy, AI-powered organisation design, and African energy transition pathways.
-              He is a sought-after speaker who has engaged with institutions including the
-              African Development Bank, European Investment Bank, European Parliament, ECOWAS,
-              UNDP, Enabel, Google X, and Africa50.
+              He most recently founded the{" "}
+              <span style={{ color: "#d4a853", fontWeight: 600 }}>
+                Africa Climate and Energy Nexus (AfCEN)
+              </span>
+              , where he continues to champion Africa&apos;s climate-positive development
+              agenda by connecting policymakers, financiers, and industry to unlock
+              sustainable investment across the continent.
             </p>
           </div>
 
