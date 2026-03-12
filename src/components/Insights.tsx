@@ -96,7 +96,7 @@ export default function Insights() {
     if (!email) return;
     setLoading(true);
     // Redirect to Beehiiv subscribe page with email pre-filled
-    window.location.href = `https://blog.josephnganga.com/#/portal/signup?ref=josephnganga.com`;
+    window.open(`https://blog.josephnganga.com/#/portal/signup`, "_blank", "noopener,noreferrer");
   };
 
   return (
