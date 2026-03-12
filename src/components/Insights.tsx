@@ -63,7 +63,8 @@ const newsletterEditions = [
     excerpt:
       "Six months ago, I handed the operational management of my company to artificial intelligence. Not a chatbot. Not a copilot. Sixteen autonomous AI agents — each with a defined role, decision-making authority, and the ability to communicate with each other.",
     readTime: "7 min read",
-    status: "upcoming",
+    status: "published",
+    url: "https://blog.josephnganga.com/i-built-a-16-agent-ai-team-that-runs-my-company-heres-what-i-learned/",
   },
   {
     edition: "Edition #2",
@@ -95,7 +96,7 @@ export default function Insights() {
     if (!email) return;
     setLoading(true);
     // Redirect to Beehiiv subscribe page with email pre-filled
-    window.location.href = `https://newsletter.josephnganga.com/subscribe?email=${encodeURIComponent(email)}`;
+    window.location.href = `https://blog.josephnganga.com/#/portal/signup?ref=josephnganga.com`;
   };
 
   return (
@@ -162,8 +163,11 @@ export default function Insights() {
         {activeTab === "newsletter" && (
           <div>
             <div style={{ display: "grid", gap: "24px", marginBottom: "56px" }}>
-              {newsletterEditions.map((ed, i) => (
-                <div key={i} className="fade-up" style={{
+              {newsletterEditions.map((ed, i) => {
+                const CardWrapper = ed.url ? "a" : "div";
+                const cardProps = ed.url ? { href: ed.url, target: "_blank", rel: "noopener noreferrer" } : {};
+                return (
+                <CardWrapper key={i} {...cardProps} className="fade-up" style={{
                   background: "rgba(255,255,255,0.03)",
                   border: "1px solid rgba(255,255,255,0.07)",
                   borderRadius: "16px",
@@ -172,12 +176,14 @@ export default function Insights() {
                   gridTemplateColumns: "1fr auto",
                   gap: "24px",
                   alignItems: "start",
-                  transition: "border-color 0.2s",
+                  transition: "border-color 0.2s, background 0.2s",
+                  textDecoration: "none",
+                  cursor: ed.url ? "pointer" : "default",
                 }}>
                   <div>
                     <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
                       <span style={{ color: "#d4a853", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>{ed.edition}</span>
-                      <span style={{ fontSize: "0.7rem", fontWeight: 600, background: "rgba(212,168,83,0.12)", color: "#d4a853", padding: "2px 10px", borderRadius: "20px" }}>
+                      <span style={{ fontSize: "0.7rem", fontWeight: 600, background: ed.status === "published" ? "rgba(52,211,153,0.12)" : "rgba(212,168,83,0.12)", color: ed.status === "published" ? "#34d399" : "#d4a853", padding: "2px 10px", borderRadius: "20px" }}>
                         {ed.status === "upcoming" ? "Coming Soon" : "Read Now"}
                       </span>
                     </div>
@@ -187,8 +193,9 @@ export default function Insights() {
                   <div style={{ textAlign: "right", whiteSpace: "nowrap" }}>
                     <span style={{ color: "#475569", fontSize: "0.8125rem" }}>{ed.readTime}</span>
                   </div>
-                </div>
-              ))}
+                </CardWrapper>
+                );
+              })}
             </div>
 
             {/* Subscribe */}
