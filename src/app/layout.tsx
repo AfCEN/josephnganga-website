@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/headshots/joseph-nganga-hero.jpg",
-        width: 850,
-        height: 1134,
-        alt: "Joseph Nganga",
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Joseph Ng'ang'a — Infrastructure Finance Architect & AI Systems Builder",
       },
     ],
   },
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     description: "Connecting African infrastructure to global capital.",
     images: [
       {
-        url: "/headshots/joseph-nganga-hero.jpg",
-        width: 850,
-        height: 1134,
-        alt: "Joseph Nganga",
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Joseph Ng'ang'a — Infrastructure Finance Architect & AI Systems Builder",
       },
     ],
   },
