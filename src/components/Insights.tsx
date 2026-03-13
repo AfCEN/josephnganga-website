@@ -95,7 +95,7 @@ export default function Insights() {
     e.preventDefault();
     if (!email) return;
     setLoading(true);
-    // Redirect to Beehiiv subscribe page with email pre-filled
+    // Redirect to Ghost Portal signup with email pre-filled
     window.open(`https://blog.josephnganga.com/#/portal/signup`, "_blank", "noopener,noreferrer");
   };
 

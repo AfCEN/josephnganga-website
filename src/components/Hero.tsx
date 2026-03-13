@@ -381,7 +381,7 @@ export default function Hero() {
         <div
           className="hero-animate hero-photo"
           style={{
-            display: "none",
+            display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}

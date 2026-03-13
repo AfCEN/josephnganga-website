@@ -25,12 +25,28 @@ export const metadata: Metadata = {
       "Connecting African infrastructure to global capital. Founder & CEO of AfCEN, Mission 300 Special Envoy, former Rockefeller Foundation.",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/headshots/joseph-nganga-hero.jpg",
+        width: 850,
+        height: 1134,
+        alt: "Joseph Nganga",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     creator: "@ngangaj",
     title: "Joseph Nganga — Infrastructure Finance & AI",
     description: "Connecting African infrastructure to global capital.",
+    images: [
+      {
+        url: "/headshots/joseph-nganga-hero.jpg",
+        width: 850,
+        height: 1134,
+        alt: "Joseph Nganga",
+      },
+    ],
   },
   robots: {
     index: true,
