@@ -60,12 +60,14 @@ export default function Footer() {
               { href: "#speaking", label: "Speaking" },
               { href: "#advisory", label: "Advisory" },
               { href: "#insights", label: "Insights" },
+              { href: "https://blog.josephnganga.com", label: "Blog", external: true },
               { href: "#contact", label: "Contact" },
             ].map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  onClick={(e) => {
+                  {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  onClick={link.external ? undefined : (e) => {
                     e.preventDefault();
                     const el = document.querySelector(link.href);
                     if (el) {
@@ -86,12 +88,42 @@ export default function Footer() {
                     (e.target as HTMLAnchorElement).style.color = "#475569";
                   }}
                 >
-                  {link.label}
+                  {link.label}{link.external ? " ↗" : ""}
                 </a>
               </li>
             ))}
           </ul>
         </nav>
+
+        {/* Newsletter CTA */}
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <span style={{ color: "#475569", fontSize: "0.8125rem" }}>The Nexus Brief</span>
+          <a
+            href="https://blog.josephnganga.com/#/portal/signup"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              padding: "8px 18px",
+              background: "transparent",
+              border: "1px solid rgba(212, 168, 83, 0.4)",
+              borderRadius: "8px",
+              color: "#d4a853",
+              fontSize: "0.8125rem",
+              fontWeight: 600,
+              textDecoration: "none",
+              transition: "all 0.2s ease",
+              whiteSpace: "nowrap",
+            }}
+            onMouseEnter={(e) => {
+              (e.target as HTMLAnchorElement).style.background = "rgba(212, 168, 83, 0.1)";
+            }}
+            onMouseLeave={(e) => {
+              (e.target as HTMLAnchorElement).style.background = "transparent";
+            }}
+          >
+            Subscribe
+          </a>
+        </div>
 
         {/* Right */}
         <div

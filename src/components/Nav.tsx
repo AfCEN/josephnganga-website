@@ -7,6 +7,7 @@ const navLinks = [
   { href: "#speaking", label: "Speaking" },
   { href: "#advisory", label: "Advisory" },
   { href: "#insights", label: "Insights" },
+  { href: "https://blog.josephnganga.com", label: "Blog", external: true },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -105,30 +106,55 @@ export default function Nav() {
         >
           {navLinks.map((link) => (
             <li key={link.href}>
-              <button
-                onClick={() => handleNavClick(link.href)}
-                style={{
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  color: "#94a3b8",
-                  fontSize: "0.875rem",
-                  fontWeight: 500,
-                  letterSpacing: "0.02em",
-                  padding: "4px 0",
-                  transition: "color 0.2s ease",
-                  fontFamily: "inherit",
-                  position: "relative",
-                }}
-                onMouseEnter={(e) => {
-                  (e.target as HTMLButtonElement).style.color = "#d4a853";
-                }}
-                onMouseLeave={(e) => {
-                  (e.target as HTMLButtonElement).style.color = "#94a3b8";
-                }}
-              >
-                {link.label}
-              </button>
+              {link.external ? (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#94a3b8",
+                    fontSize: "0.875rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.02em",
+                    padding: "4px 0",
+                    transition: "color 0.2s ease",
+                    textDecoration: "none",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.target as HTMLAnchorElement).style.color = "#d4a853";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.target as HTMLAnchorElement).style.color = "#94a3b8";
+                  }}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <button
+                  onClick={() => handleNavClick(link.href)}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    color: "#94a3b8",
+                    fontSize: "0.875rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.02em",
+                    padding: "4px 0",
+                    transition: "color 0.2s ease",
+                    fontFamily: "inherit",
+                    position: "relative",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.target as HTMLButtonElement).style.color = "#d4a853";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.target as HTMLButtonElement).style.color = "#94a3b8";
+                  }}
+                >
+                  {link.label}
+                </button>
+              )}
             </li>
           ))}
           <li>
@@ -208,28 +234,51 @@ export default function Nav() {
           }}
           className="nav-mobile-menu"
         >
-          {navLinks.map((link) => (
-            <button
-              key={link.href}
-              onClick={() => handleNavClick(link.href)}
-              style={{
-                display: "block",
-                width: "100%",
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                color: "#94a3b8",
-                fontSize: "1rem",
-                fontWeight: 500,
-                padding: "12px 0",
-                textAlign: "left",
-                fontFamily: "inherit",
-                borderBottom: "1px solid rgba(30, 45, 69, 0.4)",
-              }}
-            >
-              {link.label}
-            </button>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                style={{
+                  display: "block",
+                  width: "100%",
+                  color: "#94a3b8",
+                  fontSize: "1rem",
+                  fontWeight: 500,
+                  padding: "12px 0",
+                  textAlign: "left",
+                  textDecoration: "none",
+                  borderBottom: "1px solid rgba(30, 45, 69, 0.4)",
+                }}
+              >
+                {link.label} ↗
+              </a>
+            ) : (
+              <button
+                key={link.href}
+                onClick={() => handleNavClick(link.href)}
+                style={{
+                  display: "block",
+                  width: "100%",
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  color: "#94a3b8",
+                  fontSize: "1rem",
+                  fontWeight: 500,
+                  padding: "12px 0",
+                  textAlign: "left",
+                  fontFamily: "inherit",
+                  borderBottom: "1px solid rgba(30, 45, 69, 0.4)",
+                }}
+              >
+                {link.label}
+              </button>
+            )
+          )}
           <button
             onClick={() => handleNavClick("#contact")}
             className="btn-gold"
