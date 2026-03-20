@@ -8,7 +8,7 @@ const services = [
     tier: "Strategic Retainer",
     tagline: "Deep, sustained advisory partnership",
     description:
-      "A dedicated engagement for organisations navigating complex decisions at the intersection of climate finance, African markets, and AI-enabled strategy. Joseph works closely with your leadership team on a retained basis — combining institutional access, pattern recognition from 15+ years on the frontlines, and ongoing strategic guidance.",
+      "A dedicated engagement for organisations navigating complex decisions at the intersection of climate finance, African markets, and AI-enabled strategy. Joseph works closely with your leadership team on a retained basis — combining institutional access, pattern recognition from 20+ years on the frontlines, and ongoing strategic guidance.",
     features: [
       "Monthly strategy sessions with the leadership team",
       "Deal review and investment thesis stress-testing",

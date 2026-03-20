@@ -346,7 +346,7 @@ export default function Hero() {
             {[
               { value: "54", label: "African Markets" },
               { value: "300M", label: "People to Electrify" },
-              { value: "15+", label: "Years Experience" },
+              { value: "20+", label: "Years Experience" },
             ].map((stat) => (
               <div key={stat.label}>
                 <div
