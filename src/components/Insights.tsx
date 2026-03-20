@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const newsletterEditions = [
@@ -35,16 +34,6 @@ const newsletterEditions = [
 
 export default function Insights() {
   const sectionRef = useScrollAnimation() as React.RefObject<HTMLElement>;
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    setLoading(true);
-    // Redirect to Ghost Portal signup with email pre-filled
-    window.open(`https://blog.josephnganga.com/#/portal/signup?ref=josephnganga.com&email=${encodeURIComponent(email)}`, "_blank", "noopener,noreferrer");
-  };
 
   return (
     <section
@@ -135,30 +124,32 @@ export default function Insights() {
               <p style={{ color: "#94a3b8", fontSize: "1rem", marginBottom: "32px", maxWidth: "480px", margin: "0 auto 32px" }}>
                 Weekly intelligence on African infrastructure, critical minerals, AI systems, and global capital. No noise. No filler.
               </p>
-              {subscribed ? (
-                <div style={{ color: "#d4a853", fontWeight: 600, fontSize: "1.0625rem" }}>
-                  ✓ You&apos;re on the list. First edition coming soon.
-                </div>
-              ) : (
-                <form onSubmit={handleSubscribe} style={{ display: "flex", gap: "12px", maxWidth: "440px", margin: "0 auto", flexWrap: "wrap", justifyContent: "center" }}>
-                  <input
-                    type="email" value={email} onChange={(e) => setEmail(e.target.value)}
-                    placeholder="your@email.com" required
-                    style={{
-                      flex: 1, minWidth: "220px", padding: "14px 18px",
-                      background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)",
-                      borderRadius: "10px", color: "#f8fafc", fontSize: "0.9375rem", outline: "none",
-                    }}
-                  />
-                  <button type="submit" disabled={loading} style={{
-                    padding: "14px 28px", background: "#d4a853", color: "#0a0f1a",
-                    border: "none", borderRadius: "10px", fontWeight: 700,
-                    fontSize: "0.9375rem", cursor: "pointer", whiteSpace: "nowrap",
-                  }}>
-                    {loading ? "..." : "Subscribe →"}
-                  </button>
-                </form>
-              )}
+              <a
+                href="https://blog.josephnganga.com/#/portal/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  padding: "16px 36px",
+                  background: "#d4a853",
+                  color: "#0a0f1a",
+                  border: "none",
+                  borderRadius: "10px",
+                  fontWeight: 700,
+                  fontSize: "1rem",
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  transition: "background 0.2s ease",
+                }}
+                onMouseEnter={(e) => {
+                  (e.target as HTMLAnchorElement).style.background = "#e8c06a";
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as HTMLAnchorElement).style.background = "#d4a853";
+                }}
+              >
+                Subscribe — It&apos;s Free
+              </a>
             </div>
           </div>
 
