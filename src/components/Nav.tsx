@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#speaking", label: "Speaking" },
-  { href: "#advisory", label: "Advisory" },
+  { href: "/advisory", label: "Advisory" },
   { href: "#insights", label: "Insights" },
   { href: "https://blog.josephnganga.com", label: "Blog", external: true },
   { href: "#contact", label: "Contact" },
@@ -23,6 +23,10 @@ export default function Nav() {
 
   const handleNavClick = (href: string) => {
     setMenuOpen(false);
+    if (href.startsWith("/")) {
+      window.location.href = href;
+      return;
+    }
     const el = document.querySelector(href);
     if (el) {
       const y = el.getBoundingClientRect().top + window.scrollY - 72;
