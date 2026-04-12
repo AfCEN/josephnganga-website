@@ -27,10 +27,15 @@ export default function Nav() {
       window.location.href = href;
       return;
     }
-    const el = document.querySelector(href);
-    if (el) {
-      const y = el.getBoundingClientRect().top + window.scrollY - 72;
-      window.scrollTo({ top: y, behavior: "smooth" });
+    if (href.startsWith("#")) {
+      const el = document.querySelector(href);
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.scrollY - 72;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      } else {
+        window.location.href = "/" + href;
+      }
+      return;
     }
   };
 
